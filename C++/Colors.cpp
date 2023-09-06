@@ -1,3 +1,6 @@
+//Create and send a list of colors in English using an array, 
+//check if the color purple exists.
+//Now you need to change the value to green and display the result."	
 #include <iostream>
 #include <vector>
 
@@ -6,13 +9,13 @@ using namespace std;
 int main()
 {
     vector<string> colors = {"red", "blue", "yellow", "pink", "purple"}; 
-    string colorBuscar = "purple";
-    string colorReemplazar = "green";
-    bool encontrado = false;
+    string colorToSearch = "purple";
+    string colorToReplace = "green";
+    bool find = false;
     int i;
     int size = colors.size();
 
-    cout<<"Lista inicial: "<<endl;
+    cout<<"Inicial list: "<<endl;
     for (string x : colors)
         cout<<x<<" ";
 
@@ -20,16 +23,16 @@ int main()
     
     for (i = 0; i < size ; i++)
     {
-        if(colors[i] == colorBuscar){
-            colors[i] = colorReemplazar;
-            encontrado = true;
+        if(colors[i] == colorToSearch){
+            colors[i] = colorToReplace;
+            find = true;
         }
     }
     
-    if(encontrado){
-        cout<<"Color encontrado y reemplazado"<<endl;
+    if(find){
+        cout<<"Color finded and replaced"<<endl;
     }else{
-        cout<<"Color no encontrado"<<endl;
+        cout<<"Color not finded"<<endl;
     }
 
     for (string x : colors)

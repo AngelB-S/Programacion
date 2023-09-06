@@ -1,3 +1,6 @@
+//Teaching the vowels to the system through a SWITCH, 
+//then ask for a letter on the keyboard and check if it is a vowel	
+
 #include <iostream>
 
 using namespace std;
